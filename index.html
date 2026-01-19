@@ -222,6 +222,7 @@
             cursor: pointer;
             transition: background 0.3s;
             white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .lookup-btn:hover {
@@ -323,6 +324,26 @@
         .placeholder-icon {
             font-size: 4em;
             margin-bottom: 20px;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .kanji-input-container {
+                flex-direction: column;
+            }
+
+            .lookup-btn {
+                width: 100%;
+                padding: 15px;
+            }
         }
     </style>
 </head>
